@@ -299,25 +299,31 @@ section.two .bot .left .text {
     color: #000000;
 }
 
-section.two .bot .left .icon ul {
-    list-style: none;
+section.two .bot .left .icon {
     display: flex;
-    justify-content: flex-start;
+    margin-top: 5px;
 }
 
-section.two .bot .left .icon ul li {
-    /* height: 52px;
-    width: 100px;
-     border-radius: 50%;*/
-    background-color: lemonchiffon;
+section.two .bot .left .icon>div {
+    background-color: #6dcc0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
 }
 
-section.two .bot .left .icon ul li svg {
-    height: 26px;
-    min-height: 100%;
-    width: 100px;
-    min-width: 100%;
-    fill: lightcoral;
+section.two .bot .left .icon>div+div {
+    margin-left: 5px;
+}
+
+section.two .bot .left .icon img {
+    width: 26px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.two .bot .right {
@@ -325,12 +331,11 @@ section.two .bot .right {
 }
 
 section.two .bot .right img {
-    /*max-width: 100%;*/
     max-height: 400px;
 }
 
 section.two .bot .right>div {
-    background-color: #3b7006;
+    border: #3b7006 solid thin;
 }
 
 section.two .bot .right>div:first-child {
