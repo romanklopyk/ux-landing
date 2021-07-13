@@ -285,6 +285,7 @@ section.two .bot {
 
 section.two .bot .left {
     width: 33.33%;
+    min-width: 33.33%;
 }
 
 section.two .bot .left .text {
@@ -328,6 +329,7 @@ section.two .bot .left .icon img {
 
 section.two .bot .right {
     width: 66.67%;
+    min-width: 66.67%;
 }
 
 section.two .bot .right img {
@@ -358,4 +360,48 @@ section.two .bot .right .square-left-bottom {
     left: -20px;
     bottom: -20px;
     background-color: lawngreen;
+}
+
+
+/*------------------------------------------------------*/
+
+section.three {
+    min-height: 100vh;
+    background-color: #000000;
+    margin-top: 30px;
+}
+
+section.three .left div:nth-child(1) {
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.98;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+section.three .left div:nth-child(2) {
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.98;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+section.three .left div:nth-child(3) {
+    -webkit-text-stroke: 2px #ffffff;
+    font-family: Roboto;
+    font-size: 76px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    text-align: left;
+    color: none;
 }
