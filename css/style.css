@@ -19,6 +19,7 @@ header {
     left: 0;
     right: 0;
     background-color: #000000;
+    z-index: 100;
 }
 
 header div.menu {
@@ -337,7 +338,7 @@ section.two .bot .right img {
 }
 
 section.two .bot .right>div {
-    border: #3b7006 solid thin;
+    /*border: #3b7006 solid thin;*/
 }
 
 section.two .bot .right>div:first-child {
@@ -360,6 +361,22 @@ section.two .bot .right .square-left-bottom {
     left: -20px;
     bottom: -20px;
     background-color: lawngreen;
+}
+
+section.two .bot .right .slider1 .slsl1 {
+    min-height: 398px;
+    background-color: aquamarine;
+    background-image: url(../img/sl1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+section.two .bot .right .slider1 .slsl2 {
+    min-height: 398px;
+    background-color: rgb(2, 34, 23);
+    background-image: url(../img/sl2.png);
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 
@@ -405,3 +422,6 @@ section.three .left div:nth-child(3) {
     text-align: left;
     color: none;
 }
+
+
+/*------------------------------------------*/
