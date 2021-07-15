@@ -181,7 +181,7 @@
     
     section.two {
         min-height: 100vh;
-        margin-top: 30px;
+        margin: 30px 0px 50px 0px;
         box-sizing: border-box;
     }
     
@@ -193,7 +193,6 @@
         font-style: normal;
         line-height: 0.98;
         letter-spacing: normal;
-        text-align: left;
         color: #000000;
     }
     
@@ -232,7 +231,7 @@
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        line-height: 0.8;
         letter-spacing: normal;
         text-align: left;
         color: #000000;
@@ -256,9 +255,8 @@
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        line-height: 0.8;
         letter-spacing: normal;
-        text-align: left;
         color: #909090;
     }
     
@@ -328,10 +326,6 @@
         border: #3b7006 solid thin;
     } */
     
-    section.two .bot .right>div:first-child {
-        position: relative;
-    }
-    
     section.two .bot .right .square-top-right {
         position: absolute;
         min-width: 148px;
@@ -352,12 +346,19 @@
         z-index: -1;
     }
     
+    section.two .bot .right .slider_wrapper {
+        /* border: thin solid black; */
+        min-height: 398px;
+        position: relative;
+    }
+    
     section.two .bot .right .slider1 .slsl1 {
         min-height: 398px;
         background-color: aquamarine;
         background-image: url(../img/sl1.png);
         background-size: cover;
         background-position: 50% 50%;
+        /* border: thin solid black; */
     }
     
     section.two .bot .right .slider1 .slsl2 {
@@ -365,24 +366,49 @@
         background-color: rgb(2, 34, 23);
         background-image: url(../img/sl2.png);
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: center;
     }
-    /*    section.two .bot .right .pagin {
-        background-color: coral;
-    } */
+    
+    section.two .bot .right .pagin {
+        /* background-color: coral; */
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+    }
+    
+    section.two .bot .right .pagin>div {
+        width: 130px;
+        /* background-color: brown; */
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    section.two .bot .right .pagin button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
     
     section.two .bot .right .pagin svg {
-        height: 20px;
-        width: 20px;
-        fill: rgb(118, 231, 12);
+        height: 25px;
+        width: 25px;
+        fill: rgb(0, 0, 0);
+        /* margin: 0 10px; */
+    }
+    
+    section.two .bot .right .pagin .scale svg {
+        /* fill: rgb(211, 28, 28); */
+        transform: scaleX(-1);
     }
     /*------------------------------------------------------*/
     
     .home__for-who {
-        /* margin-top: 300px; */
+        margin-top: 30px;
         background-color: rgb(0, 0, 0);
         padding: 80px 0px;
-        height: 100vh;
+        min-height: 100vh;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -498,4 +524,81 @@
         bottom: -7px;
         right: -7px;
         z-index: 1;
+    }
+    /*-----------------------------------------------------*/
+    
+    section.testimonials {
+        min-height: 100vh;
+    }
+    
+    section.testimonials .container {
+        padding: 100px;
+        box-sizing: border-box;
+        background-color: #275535;
+    }
+    
+    section.testimonials .todo {
+        min-height: 226px;
+        margin: 0 auto;
+        background-color: #6dcc0e;
+        box-sizing: border-box;
+        display: flex;
+    }
+    
+    section.testimonials .todo .finish {
+        background-color: brown;
+        box-sizing: border-box;
+        border: crimson solid thin;
+        display: flex;
+        align-items: center;
+    }
+    
+    section.testimonials .todo .finish .finish_left {
+        min-width: 66.67%;
+        width: 66.67%;
+    }
+    
+    section.testimonials .todo .finish .finish_right {
+        min-width: 33.33%;
+        width: 66.67%;
+    }
+    
+    section.testimonials .todo .finish .finish_left>span:nth-child(1) {
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+    }
+    
+    section.testimonials .todo .finish .finish_left>span:nth-child(2) {
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        display: block;
+    }
+    
+    section.testimonials .todo .finish .finish_left>span:nth-child(3) {
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        display: block;
     }
