@@ -12,7 +12,11 @@ $('.slider1').on('afterChange', function(event, slick, currentSlide, nextSlide) 
 });
 
 $(document).ready(function() {
-    $('.slider1').slick();
+    $('.slider1').slick({
+        autoplay: false,
+        arrows: false,
+
+    });
 });
 
 $('#slider_next').on('click', function() {

@@ -41,10 +41,6 @@ header div.menu {
 
 /* адаптивне меню */
 
-header .menu_responsive {
-    /* display: none; */
-}
-
 header .menu_responsive .menu_block {
     position: relative;
     width: 36px;
@@ -96,8 +92,22 @@ header .menu_responsive .menu_block>div:nth-child(3) {
     bottom: 6px;
 }
 
+header .menu-full {
+    display: none;
+}
 
-/* end адаптивне меню */
+
+/* header .menu-full .nav {
+                          position: absolute;
+                          display: block;
+                      }
+                      
+                      header .menu-full .nav li {
+                          display: block;
+                      }  */
+
+
+/*end адаптивне меню */
 
 header .hash {
     font-family: Roboto;
@@ -109,7 +119,7 @@ header .hash {
 }
 
 header .nav {
-    /*border: thin solid yellow;*/
+    /* border: thin solid yellow; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,7 +154,7 @@ section.one {
     display: flex;
     align-items: center;
     color: white;
-    width: 100%;
+    /* min-width: 100%; */
 }
 
 section.one .main {
@@ -156,6 +166,7 @@ section.one .main {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
+    background-color: #000000;
 }
 
 section.one .main .main_foto {
@@ -254,8 +265,7 @@ section.one .Name4 div span {
 
 section.two {
     min-height: 100vh;
-    /* margin: 30px 0px 50px 0px; */
-    box-sizing: border-box;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,14 +298,17 @@ section.two .top .left>div:last-child {
 section.two .top {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 section.two .top .left {
     width: 33%;
+    min-width: 33%;
 }
 
 section.two .top .right {
     width: 66%;
+    min-width: 66%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -336,7 +349,6 @@ section.two .top .right .q3 {
 }
 
 section.two .top .right>div {
-    /*background-color: yellow;*/
     min-width: 49%;
     border-left: 6px solid #6dcc0e;
     padding-left: 5px;

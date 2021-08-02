@@ -1,0 +1,51 @@
+@media screen and (max-width: 1249px) {
+    header .nav {
+        display: none;
+    }
+    section.one .main {
+        flex-direction: column;
+        /* border: rgb(248, 247, 238) solid thin; */
+        margin: 1em;
+        width: initial;
+        min-width: initial;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 4em;
+        background-color: #000000;
+    }
+    header div.menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: auto;
+        margin-left: 1em;
+    }
+    header div.menu>*+* {
+        margin-right: 2em;
+    }
+    .two .top {
+        flex-direction: column;
+    }
+    .two .top .right {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    section.two .bot {
+        flex-direction: column;
+    }
+    .home__for-who .d-flex {
+        flex-direction: column;
+    }
+    .testimonials .finish {
+        flex-direction: column;
+    }
+    .contacts .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1249px) {
+    header .menu_responsive {
+        display: none;
+    }
+}
