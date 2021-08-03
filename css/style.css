@@ -45,8 +45,13 @@ header .menu_responsive .menu_block {
     position: relative;
     width: 36px;
     height: 36px;
-    background-color: #6dcc0e;
+    background-color: #c2c5c2;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+header .menu_responsive .menu_block:hover {
+    background-color: #dce2dc;
 }
 
 header .menu_responsive .menu_block>div {
@@ -93,18 +98,29 @@ header .menu_responsive .menu_block>div:nth-child(3) {
 }
 
 header .menu-full {
-    display: none;
+    /* display: none; */
 }
 
 
-/* header .menu-full .nav {
-                          position: absolute;
-                          display: block;
-                      }
-                      
-                      header .menu-full .nav li {
-                          display: block;
-                      }  */
+/* header .menu-full .nav .opened {
+    position: absolute;
+    display: block;
+    background-color: rgb(126, 126, 126);
+    width: 100%;
+} */
+
+header .menu-full .nav.closed {
+    position: absolute;
+    display: block;
+    background-color: rgb(126, 126, 126);
+    width: 100%;
+    transform: translateX(-110%);
+    transform-origin: 0% 0%;
+}
+
+header .menu-full .nav li {
+    display: block;
+}
 
 
 /*end адаптивне меню */
@@ -150,7 +166,7 @@ header .nav a:hover {
 section.one {
     min-height: 100vh;
     height: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     color: white;
@@ -267,7 +283,7 @@ section.two {
     min-height: 100vh;
     /* height: 100%; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -293,6 +309,11 @@ section.two .top .left>div:last-child {
     letter-spacing: normal;
     text-align: left;
     color: rgba(0, 0, 0, 0);
+}
+
+.two .t1 {
+    margin: 0 auto;
+    min-width: 1200px;
 }
 
 section.two .top {
@@ -643,6 +664,7 @@ section.testimonials .todo .finish {
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    /* background-color: darkorange; */
 }
 
 section.testimonials .todo .finish .finish_left {
