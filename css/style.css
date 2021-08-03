@@ -314,6 +314,7 @@ section.two .top .left>div:last-child {
 .two .t1 {
     margin: 0 auto;
     min-width: 1200px;
+    width: 1200px;
 }
 
 section.two .top {
